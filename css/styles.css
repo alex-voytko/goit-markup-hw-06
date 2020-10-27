@@ -102,9 +102,6 @@ ul {
     padding: 31px 0;
     margin-right: 50px;
 }
-.navigation-menu .item.active::after {
-
-}
 .navigation-menu .item:last-child {
     margin: 0;
 }
@@ -488,7 +485,9 @@ address li:last-child {
     margin-left: 70px;
     padding-top: 12px;
 }
-.follow-us-container p {
+.follow-us-container p,
+.subscribe-container p {
+    margin-bottom: 20px;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -499,7 +498,6 @@ address li:last-child {
 }
 .footer-social-links {
     display: flex;
-    margin-top: 20px;
 }
 .footer-social-links li {
     margin-left: 10px;
@@ -524,6 +522,54 @@ address li:last-child {
 .footer-social-links a:focus {
     background-color: var(--accent-color);
     border-radius: 50%;
+}
+.subscribe-container {
+    display: block;
+    padding-top: 12px;
+    margin-left: 93px;
+}
+.subscribe-container form {
+    display: flex;
+    width: 358px;
+    height: 50px;
+}
+.subscribe-container form input {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    padding: 15px 16px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.subscribe-container form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 28px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+}
+.subscribe-container form button svg {
+    margin-left: 10px;
+    fill: var(--title-text-color);
 }
 /* portfolio html */
 .our-works-section {
