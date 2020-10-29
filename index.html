@@ -51,7 +51,42 @@
                     <!--modal with backdrop-->
                     <div class="backdrop is-hidden" data-modal>
                         <div class="modal">
-                            <button data-modal-close></button>
+                            <button data-modal-close class="close-modal-button">
+                                <svg width="11" height="11">
+                                    <use href="./img/svg/sprite.svg#icon-close-modal"></use>
+                                </svg>
+                            </button>
+                            <h2>Оставьте свои данные, мы вам перезвоним</h2>
+                            <form action="#">
+                                <div class="form-field">
+                                    <label for="name">Имя</label>
+                                    <svg width="18" height="18">
+                                        <use href="./img/svg/sprite.svg#icon-person-black-18dp-1"></use>
+                                    </svg>
+                                    <input type="text" name="user-name" id="name" class="input-field">
+                                </div>
+                                <div class="form-field">
+                                    <label for="phone">Телефон</label>
+                                    <svg width="18" height="18">
+                                        <use href="./img/svg/sprite.svg#icon-phone-black-18dp-1"></use>
+                                    </svg>
+                                    <input type="tel" name="user-phone" id="phone" class="input-field">
+                                </div>
+                                <div class="form-field">
+                                    <label for="email">Почта</label>
+                                    <svg width="18" height="18">
+                                        <use href="./img/svg/sprite.svg#icon-email-black-18dp-1"></use>
+                                    </svg>
+                                    <input type="email" name="user-email" id="email" class="input-field">
+                                </div>
+                                <label for="comment">Комментарий</label>
+                                <textarea name="comment" id="" cols="30" rows="10" id="comment" placeholder="Введите сообщение"></textarea>
+                                <div class="checkbox-container">
+                                        <input type="checkbox" class="checkbox" id="checkbox">
+                                    <label for="checkbox">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+                                </div>
+                            </form>
+                            <button class="send-button">Отправить</button>
                         </div>
                     </div>
                 </div>
@@ -301,12 +336,6 @@
                         </button>
                     </form>
                 </div>
-                                        <!--modal with backdrop-->
-                  <div class="backdrop-2 is-hidden" data-modal>
-                      <div class="modal-subscribe">
-                       <button data-modal-close></button>
-                       </div>
-                  </div>
             </div>
         </div>
     </footer>
