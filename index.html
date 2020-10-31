@@ -60,24 +60,24 @@
                             <form action="#">
                                 <div class="form-field">
                                     <label for="name">Имя</label>
+                                    <input type="text" name="user-name" id="name" class="input-field">
                                     <svg width="18" height="18">
                                         <use href="./img/svg/sprite.svg#icon-person-black-18dp-1"></use>
                                     </svg>
-                                    <input type="text" name="user-name" id="name" class="input-field">
                                 </div>
                                 <div class="form-field">
                                     <label for="phone">Телефон</label>
+                                    <input type="tel" name="user-phone" id="phone" class="input-field">
                                     <svg width="18" height="18">
                                         <use href="./img/svg/sprite.svg#icon-phone-black-18dp-1"></use>
                                     </svg>
-                                    <input type="tel" name="user-phone" id="phone" class="input-field">
                                 </div>
                                 <div class="form-field">
                                     <label for="email">Почта</label>
+                                    <input type="email" name="user-email" id="email" class="input-field">
                                     <svg width="18" height="18">
                                         <use href="./img/svg/sprite.svg#icon-email-black-18dp-1"></use>
                                     </svg>
-                                    <input type="email" name="user-email" id="email" class="input-field">
                                 </div>
                                 <label for="comment">Комментарий</label>
                                 <textarea name="comment" id="" cols="30" rows="10" id="comment" placeholder="Введите сообщение"></textarea>
@@ -85,8 +85,8 @@
                                         <input type="checkbox" class="checkbox" id="checkbox">
                                     <label for="checkbox">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
                                 </div>
+                                <button type="submit" class="send-button">Отправить</button>
                             </form>
-                            <button class="send-button">Отправить</button>
                         </div>
                     </div>
                 </div>
@@ -331,7 +331,8 @@
                     <p>Подпишитесь на рассылку</p>
                     <form action="#">
                         <input type="email" name="user-email" placeholder="E-Mail">
-                        <button data-modal-open>Подписаться<svg width="24" height="24">
+                        <button type="submit">Подписаться
+                                <svg width="24" height="24">
                                 <use href="./img/svg/sprite.svg#icon-send"></use></svg>
                         </button>
                     </form>
